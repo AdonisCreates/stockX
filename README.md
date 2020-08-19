@@ -5,6 +5,6 @@ This project will be for a shoe lover's profile. The user will be able to create
 
 This CRUD application will be mocking StockX.com
 
-Live link: n/a yet
+Live link: https://stock-x-store.herokuapp.com/shoes
 
 Resources: n/a yet
