@@ -26,11 +26,15 @@ mongoose.connection.once('open', () => {
     console.log("connected to mongoDB-StockX-BABYYY");
 })
 
+// Controllers
+const shoeController = require('./controllers/shoes.js');
+app.use('/shoes', shoeController);
+
 // Default Route
 app.get("/", (req, res) => {
     res.redirect("/shoes");
   });
 
 app.listen(PORT, ()=>{
-    console.log('this is working');
+    console.log('this is working' + PORT);
 })

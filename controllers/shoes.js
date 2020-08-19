@@ -4,8 +4,12 @@ const Shoes = require('../models/shoes.js');
 
 // Index Route
 
-router.get('/', (res, res)=> {
-    res.send('shoes/Index')
+router.get('/', (req, res)=>{
+    Shoes.find({}, (error, allShoes)=> {
+        res.render('shoes/Index', {
+            shoes: allShoes
+        });
+    });
 });
 
 // New
