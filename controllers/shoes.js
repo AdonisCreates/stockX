@@ -3,10 +3,9 @@ const router = express.Router();
 const Shoes = require('../models/shoes.js');
 
 // Index Route
-
 router.get('/', (req, res)=>{
     Shoes.find({}, (error, allShoes)=> {
-        res.render('shoes/Index', {
+        res.render('Index', {
             shoes: allShoes
         });
     });
