@@ -14,7 +14,7 @@ router.get('/', (req, res)=>{
 // New
 
 router.get('/new', (req, res)=>{
-    res.render('/shoes/New');
+    res.render('New');
 })
 
 module.exports = router;
