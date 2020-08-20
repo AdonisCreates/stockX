@@ -10,6 +10,7 @@ class New extends React.Component {
                     Name: <input type="text" name="name" /><br />
                     Description: <input type="textarea" name="description" /><br />
                     Shoes Are In Stock: <input type="checkbox" name="shoesAreInStock" /><br />
+                    <input type="submit" name="" value="Create Shoes" />
                 </form>
             </div>
 
