@@ -14,7 +14,7 @@ class Index extends React.Component {
                         shoes.map((shoe,)=>{
                             return (
                                 <li>
-                                    <a href={`/shoes/${shoe._id}`}>{log.name}</a>
+                                    <a href={`/shoes/${shoe._id}`}>{shoe.name}</a>
                                     Description: {shoes.description}<br />
                                     Shoes Are In Stock?: {shoe.shoesAreInStock ? 'Shoes are in stock' : `Shoes are not in stock`}<br />
                                     <form action={`/shoes/${shoe._id}?_method=DELETE`} method="POST">
