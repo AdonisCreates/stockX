@@ -4,6 +4,7 @@ class Index extends React.Component {
     render() {
         const { shoes } = this.props
         return(
+            <default>
             <div>
                 <h1>StockX Index Page</h1>
                 <nav>
@@ -26,6 +27,7 @@ class Index extends React.Component {
                     }
                 </ul>
             </div>
+            </default>
         )
     }
 }

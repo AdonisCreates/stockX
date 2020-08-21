@@ -40,7 +40,6 @@ router.put("/:id", (req, res)=> {
 })
 
 // Create
-
 router.post("/", (req, res)=> {
     if(req.body.areShoesInStock === "on") {
         req.body.areShoesInStock = true;
@@ -54,7 +53,6 @@ router.post("/", (req, res)=> {
 });
 
 // Edit
-
 router.get("/:id/edit", (req, res)=> {
     Shoes.findById(req.params.id, (error, foundShoes)=>{
         res.render("Edit")
