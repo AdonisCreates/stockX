@@ -2,7 +2,7 @@ const React = require('react');
 
 class Edit extends React.Component {
     render() {
-        const {_id, name, description, areShoesInStock} = this.props.log;
+        const {_id, name, description, areShoesInStock} = this.props.shoe;
         return (
             <div>
                 <h1>Stock X's Edit Page</h1>
@@ -11,6 +11,7 @@ class Edit extends React.Component {
                     Description: <input type="text" name="description" defaultValue={description}/><br />
                     areShoesInStock: <input type="checkbox" name="areShoesInStock" checked={areShoesInStock}/>
                     <input type="submit" name="" value="Submit Changes"/>
+                    
                 </form>
             </div>
         )
