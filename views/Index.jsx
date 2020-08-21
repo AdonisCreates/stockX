@@ -21,6 +21,7 @@ class Index extends React.Component {
                                     <form action={`/shoes/${shoe._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
                                     </form>
+                                    <img src={shoes.img}></img>
                                     <a href={`/shoes/${shoes._id}/edit`}>Edit</a>
                                 </li>
                             )
