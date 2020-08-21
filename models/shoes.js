@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const shoeSchema = new Schema ({
     name: { type: String, required: true},
     description: { type: String, required: true},
-    shoesAreInStock: Boolean
+    areShoesInStock: Boolean
 });
 
 //Creating a Model for the schema now

@@ -14,6 +14,7 @@ router.get('/', (req, res)=>{
 // New
 router.get('/new', (req, res)=>{
     res.render('New');
+    console.log('check');
 })
 
 // Delete/DESTROY
@@ -35,11 +36,13 @@ router.put("/:id", (req, res)=> {
         { new: true },
         (error, updatedModel) => {
             res.redirect("/shoes");
+            console.log(error)
+            console.log(updatedModel)
         }
     )
 })
 
-// Create
+// Create 
 router.post("/", (req, res)=> {
     if(req.body.areShoesInStock === "on") {
         req.body.areShoesInStock = true;
@@ -49,8 +52,12 @@ router.post("/", (req, res)=> {
     // Use model to create Shoe Document
     Shoes.create(req.body, (error, createdShoes)=>{
         res.redirect("/shoes")
+        console.log(error);
+        console.log(createdShoes);
     });
 });
+
+
 
 // Edit
 router.get("/:id/edit", (req, res)=> {
