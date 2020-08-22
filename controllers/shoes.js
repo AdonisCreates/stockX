@@ -34,7 +34,7 @@ router.put("/:id", (req, res)=> {
             console.log(updatedModel)
         }
     )
-})
+}) 
 // Create 
 router.post("/", (req, res)=> {
     if(req.body.areShoesInStock === "on") {
