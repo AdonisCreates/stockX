@@ -18,7 +18,7 @@ class Index extends React.Component {
                                 <li>
                                     <a href={`/shoes/${shoe._id}`}>{shoe.name}</a>
                                     Description: {shoes.description}<br />
-                                    Are Shoes In Stock?: {shoe.shoesAreInStock ? 'Shoes are in stock' : `Shoes are not in stock`}<br />
+                                    Are Shoes In Stock?: {shoe.areShoesInStock ? 'Shoes are in stock' : `Shoes are not in stock`}<br />
                                     <form action={`/shoes/${shoe._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
                                     </form>

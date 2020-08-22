@@ -60,6 +60,7 @@ router.get("/:id/edit", (req, res)=> {
 // Show
 router.get("/:id", (req, res)=>{
     Shoes.findById(req.params.id, (error, foundShoes)=>{
+        console.log(req.params.id)
         res.render("Show", {
             shoe: foundShoes,
         });
