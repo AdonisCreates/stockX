@@ -3,6 +3,7 @@ const React = require('react');
 class Index extends React.Component {
     render() {
         const { shoes } = this.props
+        console.log(shoes)
         return(
             <default>
             <div>

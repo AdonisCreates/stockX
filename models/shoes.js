@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+// const Schema = mongoose.Schema;
 
 // Creating my Shoe Schema
-const shoeSchema = new Schema ({
+const shoeSchema = new mongoose.Schema ({
     name: { type: String, required: true},
     description: { type: String, required: true},
     img: {type: String, required: true},

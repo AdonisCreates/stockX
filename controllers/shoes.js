@@ -58,15 +58,30 @@ router.post("/", (req, res)=> {
 });
 
 
-
-// Edit
-router.get("/:id/edit", (req, res)=> {
+//Edit
+router.get('/:id/edit', (req, res)=>{
     Shoes.findById(req.params.id, (error, foundShoes)=>{
-        res.render("Edit", {
-            shoe: foundShoes
+      if(error){
+        res.status(500).send({
+          error: error.message
         })
+      } else {
+        res.render('Edit', {
+          shoe: foundShoes
+        })
+      }
     });
-});
+  });
+
+
+// // Edit
+// router.get("/:id/edit", (req, res)=> {
+//     Shoes.findById(req.params.id, (error, foundShoes)=>{
+//         res.render("Edit", {
+//             shoe: foundShoes
+//         })
+//     });
+// });
 
 // Show
 router.get("/:id", (req, res)=>{
