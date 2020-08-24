@@ -9,7 +9,7 @@ class New extends React.Component {
                 method="POST">
                     Name: <input type="text" name="name" /><br />
                     Description: <input type="textarea" name="description" /><br />
-                    Shoes Are In Stock: <input type="checkbox" name="shoesAreInStock" /><br />
+                    Shoes Are In Stock: <input type="checkbox" name="areShoesInStock" /><br />
                     IMG: <input type="text" name = "img"/><br />
 
                     <input type="submit" name="" value="Create Shoes" />

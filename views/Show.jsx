@@ -9,7 +9,7 @@ class Show extends React.Component {
                 <p>{name}</p>
                 <p>{description}</p>
                 <p>{shoesAreInStock}</p>
-                <img src= {img}></img>
+                <p><img src= {img}></img></p>
                 <a href="/shoes">Return to the Index Page</a>
             </div>
         )
