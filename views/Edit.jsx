@@ -1,5 +1,8 @@
 const React = require('react');
 
+const Default = require("./Default.jsx");
+
+
 class Edit extends React.Component {
     render() {
         const { _id, name, description, img, areShoesInStock } = this.props.shoe;

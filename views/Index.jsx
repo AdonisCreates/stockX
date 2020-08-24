@@ -1,11 +1,14 @@
 const React = require('react');
 
+const Default = require("./Default.jsx");
+
+
 class Index extends React.Component {
     render() {
         const { shoes } = this.props
         console.log(shoes)
         return(
-            <default>
+            <Default>
             <div>
                 <h1>StockX Index Page</h1>
                 <nav>
@@ -30,7 +33,7 @@ class Index extends React.Component {
                     }
                 </ul>
             </div>
-            </default>
+        </Default>
         )
     }
 }
