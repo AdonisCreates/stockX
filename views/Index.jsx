@@ -10,9 +10,14 @@ class Index extends React.Component {
         return(
             <Default>
             <div>
-                <h1>StockX Index Page</h1>
+                <h1>Create and read on your favorite kicks.</h1>
+                <h1>You can also delete and edit them!</h1>
                 <nav>
                     <a href="/shoes/new">Create Some New Kicks</a>
+                    {/* <a href="/shoes/new">Home</a>
+                    <a href="/shoes/new">About</a>
+                    <a href="/shoes/new">Contact</a>
+                    <a href="/shoes/new">Blog</a> */}
                 </nav>
                 <ul>
                     {
