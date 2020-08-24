@@ -1,6 +1,6 @@
 const React = require('react');
 
-const Default = require("./Default.jsx");
+const Default = require("./components/Default.jsx");
 
 
 class Index extends React.Component {
