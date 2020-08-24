@@ -13,7 +13,7 @@ class Index extends React.Component {
                 </nav>
                 <ul>
                     {
-                        shoes.map((shoe,)=>{
+                        shoes.map((shoe)=>{
                             return (
                                 <li>
                                     <a href={`/shoes/${shoe._id}`}>{shoe.name}</a>

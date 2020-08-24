@@ -30,8 +30,6 @@ router.put("/:id", (req, res)=> {
         { new: true },
         (error, updatedModel) => {
             res.redirect("/shoes");
-            console.log(error)
-            console.log(updatedModel)
         }
     )
 }) 
@@ -50,10 +48,10 @@ router.post("/", (req, res)=> {
     });
 });
 // Edit
-router.get(":id/edit", (req, res)=> {
+router.get("/:id/edit", (req, res)=> {
     Shoes.findById(req.params.id, (error, foundShoes)=>{
         res.render("Edit", {
-            shoe: foundShoes
+            shoe: foundShoes,
         })
     });
 });
