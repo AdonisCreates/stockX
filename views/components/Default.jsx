@@ -30,7 +30,7 @@ class Default extends React.Component {
         <body> 
             {this.props.children}
             <footer>
-                <h4>Created By Adonis Creates</h4>
+                <h6>Created By Adonis Creates</h6>
             </footer>
         </body>
     </html>

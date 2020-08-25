@@ -1,21 +1,32 @@
 const express = require('express');
 const router = express.Router();
 const Shoes = require('../models/shoes.js');
+
+const isAuthenticated = (req, res, next) => {
+    if (req.session.currentUser) {
+      return next()
+    } else {
+      res.redirect('/sessions/new')
+    }
+  }
+
+
 // Index Route
 router.get('/', (req, res)=>{
     Shoes.find({}, (error, allShoes)=> {
         res.render('Index', {
-            shoes: allShoes
+            shoes: allShoes,
+            currentUser: req.session.currentUser
         });
     });
 });
 // New
-router.get('/new', (req, res)=>{
+router.get('/new', isAuthenticated, (req, res)=>{
     res.render('New');
     console.log('check');
 })
 // Delete/DESTROY
-router.delete("/:id", (req, res)=> {
+router.delete("/:id", isAuthenticated, (req, res)=> {
     Shoes.findByIdAndRemove(req.params.id, (error, shoe)=>{
         res.redirect("/shoes");
     });
@@ -48,13 +59,25 @@ router.post("/", (req, res)=> {
     });
 });
 // Edit
-router.get("/:id/edit", (req, res)=> {
+router.get("/:id/edit", isAuthenticated, (req, res)=> {
     Shoes.findById(req.params.id, (error, foundShoes)=>{
         res.render("Edit", {
             shoe: foundShoes,
         })
     });
 });
+
+// Patch
+router.patch('/:id',isAuthenticated, (req, res)=>{
+    req.body.qty -= req.body.qtys
+    Shoes.findByIdAndUpdate(req.params.id, req.body, (error, updatedItem) => {
+        res.redirect("/shoes/")
+    }   
+    )
+    
+});
+
+
 // Show
 router.get("/:id", (req, res)=>{
     Shoes.findById(req.params.id, (error, foundShoes)=>{

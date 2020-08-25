@@ -1,4 +1,3 @@
-  
 const React = require('react');
 
 class Layout extends React.Component {
@@ -10,7 +9,7 @@ class Layout extends React.Component {
         <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossOrigin="anonymous"></script>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/pokemon" type="text/css"/>
         <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
-        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="/main.css"/>
         </head>
         <body>
         {this.props.children}
