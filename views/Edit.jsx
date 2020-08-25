@@ -8,7 +8,7 @@ class Edit extends React.Component {
         console.log(this.props)
         return (
             <div>
-                <h1>Stock X's Edit Page</h1>
+                <h1>Click below to Edit your kicks. Give it a new name, description and make sure they're in stock!</h1>
                 <form action={`/shoes/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name}/><br />
 

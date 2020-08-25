@@ -5,7 +5,7 @@ class New extends React.Component {
     render() {
         return(
             <div>
-                <h1>Stock-X New Page</h1>
+                <h1>Add more shoes to your wishlist!</h1>
                 <form action="/shoes"
                 method="POST">
                     Name: <input type="text" name="name" /><br />
