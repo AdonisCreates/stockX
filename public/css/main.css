@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 
-body, a {
+body {
     height: 100%;
     /* // viewport height takes 100% of the web page and not actual page, this is really good for centering games */
     /* // this gives my background a clean smooth color */
