@@ -2,5 +2,14 @@ body {
     font-size: 16px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #228B22;
+    background-color: #8fa78f;
+}
+
+img {
+    width: auto;
+    flex-wrap: row;
+}
+
+h1 {
+    text-align: center;
 }

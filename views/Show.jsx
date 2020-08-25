@@ -1,13 +1,12 @@
 const React = require('react');
-const Default = require("./Default.jsx");
-
+const Default = require('./components/Default')
 
 class Show extends React.Component {
     render() {
         const { name, description, img, shoesAreInStock } = this.props.shoe;
         return (
             <div>
-                <h1>StockX Show Page</h1>
+                <h1>History of these Kicks</h1>
                 <p>{name}</p>
                 <p>{description}</p>
                 <p>{shoesAreInStock}</p>
