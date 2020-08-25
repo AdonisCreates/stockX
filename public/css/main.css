@@ -1,15 +1,30 @@
-body {
-    font-size: 16px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #8fa78f;
-}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body, a {
+    height: 100%;
+    /* // viewport height takes 100% of the web page and not actual page, this is really good for centering games */
+    /* // this gives my background a clean smooth color */
+    background: linear-gradient(lightgreen, darkgreen);
+    text-align: center;
+  }
 
 img {
-    width: auto;
-    flex-wrap: row;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    /* // without this it'll sit on a 2D plane being flat. This enforces the 3D effect */
+    transform-style: preserve-3d;
+    /* // transition shows it */
+    transition: transform .5s;
+
 }
 
-h1 {
+/* h1, h2, h3, nav {
     text-align: center;
-}
+} */
