@@ -9,15 +9,11 @@ class Index extends React.Component {
         return(
             <Default>
             <div>
-                <h1>Create and read on your favorite kicks.</h1>
-                <h2>You can also delete and edit them!</h2>
-                <h3>Add to Adriel's Collection</h3>
+                <h1>Create and Read about your favorite kicks.</h1>
+                <h2>You can also Update, Delete and Edit them!</h2>
+                <h3>Add To Your Collection</h3>
                 <nav>
                     <a href="/shoes/new">Create Some New Kicks</a>
-                    {/* <a href="/shoes/new">Home</a>
-                    <a href="/shoes/new">About</a>
-                    <a href="/shoes/new">Contact</a>
-                    <a href="/shoes/new">Blog</a> */}
                 </nav>
                 <ul>
                     {

@@ -25,6 +25,7 @@ class Default extends React.Component {
         <a class="navbar-brand" href="https://help.stockx.com/s/?language=en_US">Help</a>
         <a class="navbar-brand" href="https://stockx.com/account">My Account</a>
         <a class="navbar-brand" href="https://stockx.com/sell">Sell</a>
+        
         </nav>
         <body> 
             {this.props.children}
