@@ -18,10 +18,7 @@ class Default extends React.Component {
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="https://stockx.com/sneakers">Browse</a>
         <a class="navbar-brand" href="https://stockx.com/news/">News</a>
-        <a class="navbar-brand" href="https://stockx.com/text-me-the-app">App</a>
-        <a class="navbar-brand" href="https://stockx.com/how-it-works">About</a>
-        <a class="navbar-brand" href="https://help.stockx.com/s/?language=en_US">Help</a>
-        <a class="navbar-brand" href="https://stockx.com/account">My Account</a>
+        <a class="navbar-brand" href="/users/new">Create A New Account</a>
         <a class="navbar-brand" href="https://stockx.com/sell">Sell</a>
         
         </nav>

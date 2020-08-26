@@ -32,7 +32,7 @@ router.delete("/:id", isAuthenticated, (req, res)=> {
     });
 });
 // Update
-router.put("/:id", (req, res)=> {
+router.put("/:id", isAuthenticated, (req, res)=> {
     req.body.areShoesInStock = req.body.areShoesInStock === "on" ? `true` : `false`;
     // Update shoe document
     Shoes.findByIdAndUpdate(

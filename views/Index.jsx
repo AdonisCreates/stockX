@@ -14,6 +14,7 @@ class Index extends React.Component {
                 <h3>Add To Your Collection</h3>
                 <nav>
                     <a href="/shoes/new">Create Some New Kicks</a>
+                    
                 </nav>
                 <ul>
                     {
@@ -28,6 +29,7 @@ class Index extends React.Component {
                                     <form action={`/shoes/${shoe._id}?_method=DELETE`} method="POST">
                                         <input type="submit" value="delete"/>
                                     </form>
+                                    
                                 </li>
                             )
                         })
