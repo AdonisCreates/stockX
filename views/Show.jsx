@@ -11,7 +11,7 @@ class Show extends React.Component {
                 <p>{description}</p>
                 <p>{shoesAreInStock}</p>
                 <p><img src= {img}></img></p>
-                <a href="/shoes">Return to the Index Page</a>
+                <a href="/shoes">Return to Home Page</a>
             </div>
         )
     }

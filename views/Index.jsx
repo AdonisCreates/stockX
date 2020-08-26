@@ -9,11 +9,9 @@ class Index extends React.Component {
         return(
             <Default>
             <div>
-                <h1>Shoe Lover's Blog</h1>
-                <h2>Create, Read, Update and Delete yo, Kicks!</h2>
-                <h3>Add To Your Collection</h3>
+                <h1>Shoe Lover's Wishlist</h1>
                 <nav>
-                    <a href="/shoes/new">Create Some New Kicks</a>
+                    <a href="/shoes/new">Create New Shoes</a>
                     
                 </nav>
                 <ul>

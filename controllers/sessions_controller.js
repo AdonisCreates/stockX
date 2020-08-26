@@ -19,7 +19,7 @@ sessions.post('/', (req, res) => {
       // if found user is undefined/null not found etc
       res.send('<a  href="/">Sorry, no user found </a>')
     } else {
-      // user is found yay!
+      // user is found lets gooooooooooooo
       // now let's check if passwords match
       if (bcrypt.compareSync(req.body.password, foundUser.password)) {
         // add the user to our session
