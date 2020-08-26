@@ -9,8 +9,8 @@ class Index extends React.Component {
         return(
             <Default>
             <div>
-                <h1>Create and Read about your favorite kicks.</h1>
-                <h2>You can also Update, Delete and Edit them!</h2>
+                <h1>Shoe Lover's Blog</h1>
+                <h2>Create, Read, Update and Delete yo, Kicks!</h2>
                 <h3>Add To Your Collection</h3>
                 <nav>
                     <a href="/shoes/new">Create Some New Kicks</a>
