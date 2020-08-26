@@ -16,8 +16,6 @@ class Default extends React.Component {
             <title>StockX</title>
         </head>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="http://localhost:3000/shoes">Home</a>
-        <a class="navbar-brand" href="http://localhost:3000/shoes/new">Build Your Kicks</a>
         <a class="navbar-brand" href="https://stockx.com/sneakers">Browse</a>
         <a class="navbar-brand" href="https://stockx.com/news/">News</a>
         <a class="navbar-brand" href="https://stockx.com/text-me-the-app">App</a>
