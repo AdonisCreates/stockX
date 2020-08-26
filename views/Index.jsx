@@ -10,6 +10,7 @@ class Index extends React.Component {
             <Default>
             <div>
                 <h1>Shoe Lover's Wishlist</h1>
+                <h2>Still in working progress</h2>
                 <nav>
                     <a href="/shoes/new">Create New Shoes</a>
                     
